@@ -25,7 +25,3 @@ To use TopIt plugin:
       			startingDistance: null,		//default 100
       		});
       	});
-
-
-
-Happy coding
