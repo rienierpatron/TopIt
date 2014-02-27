@@ -1,0 +1,12 @@
+.topIt{
+	display:none;
+	text-align:center;
+	padding:3px;
+	cursor:pointer;
+	position: fixed; bottom: 0px; z-index: 100000;
+	margin:0px 5px 0px 5px;
+	font-family:"Arial";
+}
+.topIt:hover{
+	opacity:0.5;
+}
