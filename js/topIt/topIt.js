@@ -85,9 +85,9 @@
 			if(settings.speed){
 				speed = settings.speed;
 			}else{
-				speed = 100;
+				speed = "fast";
 			}
-			$("html").animate({ scrollTop: 0 }, speed);
+			$("html,body").animate({ scrollTop: 0 }, speed);
   			return false;
 		}
 	};
