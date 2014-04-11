@@ -16,14 +16,13 @@ To use TopIt plugin:
         jQuery(document).ready( function($) {
       		$('.topIt').topIt({
       			label			: null, 	//default label "TOP"
-      			width			: null,		//default 35
       			background		: null,		//default #000000
       			border			: null,		//no border by default, sample format if will be used -> 1px solid black 
       			color			: null,		//default #FFFFFF
       			fontSize		: "10px",	//default 20px
       			position		: null,		//default left
       			startingDistance: null,		//default 100
-            speed     : null,   //default fast (slow,fast)
+            speed     : null,   //default 100
       		});
       	});
 

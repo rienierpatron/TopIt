@@ -4,7 +4,6 @@
 
 		var settings = $.extend({
 			label			: null, //label of the button
-			width			: null, //width of the button (min:35,max:300)
 			background		: null, //color of the button
 			border			: null,
 			color			: null, //color of the text
@@ -21,19 +20,9 @@
 				$(this).text("TOP");
 			}
 
-			if(settings.width){
-				if(settings.width >= 35 && settings.width <= 300){
-					$(this).css( 'width', settings.width+'px');
-				}
-				if(settings.width < 35){
-					$(this).css( 'width', '35px');
-				}
-				if(settings.width > 300){
-					$(this).css( 'width', '300px');
-				}
-			}else{
-				$(this).css( 'width', '35px');
-			}
+			
+			$(this).css( 'display', 'inline-block');
+			
 
 			if(settings.background){
 				$(this).css('background-color',settings.background);
@@ -62,6 +51,20 @@
 					$(this).css('right',0);
 				}
 			}
+
+			if(settings.startingDistance){
+				distance = settings.startingDistance;
+			}else{
+				distance = 100;
+			}
+		    if ($(window).scrollTop() >= distance) {
+		    	if($(".topIt:hidden" ).length == 1){
+		    		$('.topIt').fadeIn();
+		    	}
+		    }else{
+		        $('.topIt').fadeOut();
+		    }
+
 			//scroll handler
 			$(window).scroll(function() {
 				if(settings.startingDistance){
@@ -85,7 +88,7 @@
 			if(settings.speed){
 				speed = settings.speed;
 			}else{
-				speed = "fast";
+				speed = 100;
 			}
 			$("html,body").animate({ scrollTop: 0 }, speed);
   			return false;
