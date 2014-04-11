@@ -22,7 +22,7 @@ To use TopIt plugin:
       			fontSize		: "10px",	//default 20px
       			position		: null,		//default left
       			startingDistance: null,		//default 100
-            speed     : null,   //default 100
+                speed           : null,   //default 100
       		});
       	});
 
