@@ -11,13 +11,14 @@
 			position		: null, //positioning (left,right)
 			startingDistance: null, //distance of scroll where button will show
 			speed			: null,
+			theme 		 	: null,
 		},options);
 
 		return this.each( function() {
 			if(settings.label){
-				$(this).text(settings.label);
+				$(this).html(settings.label);
 			}else{
-				$(this).text("TOP");
+				$(this).html("TOP");
 			}
 
 			
