@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<link href="css/topIt.css" rel="stylesheet">
 	</head>
 	<body>
 		<h3>TopIt</h3>
@@ -85,15 +84,15 @@
     <script>
     jQuery(document).ready( function($) {
 		$('.topIt').topIt({
-			label			: null, 	//default label "TOP"
-			background		: null,		//default #000000
-			border			: null,		//no border by default, sample format if will be used -> 1px solid black 
+			label			: "Move to Top", 	//default label "TOP"
+			background		: "blue",		//default #000000
+			border 			: null,
 			color			: null,		//default #FFFFFF
 			fontSize		: "12px",	//default 20px
-			position		: null,		//default left
-			startingDistance: null,		//default 100
+			position		: "left",		//default left
+			startingDistance: 20,		//default 100
 			speed			: 50,		//default 100
-			borderStyle 	: "round"   //default pointed
+			theme 		 	: null   //default pointed
 		});
 	});
     </script>

@@ -5,9 +5,8 @@ If scrolling back to top of your page seems to be a hassle, then here's one good
 To use TopIt plugin:
 
 - Call the following files to your codes:
-
-    - css/topIt.css
     - js/topIt/topIt.js
+      Note: be sure that you all have the files for this plugin
 
 - Create a div with a class "topIt" to create the scroll to top button.
 
@@ -15,15 +14,18 @@ To use TopIt plugin:
 
         jQuery(document).ready( function($) {
       		$('.topIt').topIt({
-      			label			: null, 	//default label "TOP"
-      			background		: null,		//default #000000
-      			border			: null,		//no border by default, sample format if will be used -> 1px solid black 
-      			color			: null,		//default #FFFFFF
-      			fontSize		: "10px",	//default 20px
-      			position		: null,		//default left
-      			startingDistance: null,		//default 100
-                speed           : null,     //default 100
       		});
       	});
+
+And here are the usable parameters:
+      label           : null, //label of the button, default label "TOP"
+      background      : null, //color of the button, default #000000
+      border          : null, //format is like "1px solid black"
+      color           : null, //color of the text, default #FFFFFF
+      fontSize        : null, //text font size, default 20px
+      position        : null, //positioning (left,right), default left
+      startingDistance: null, //distance of scroll where button will show, default 100
+      speed           : null, //default is 100
+      theme           : null, //available themes for now : rounded, bottomLine
 
 //rienierpatron
